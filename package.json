@@ -1,0 +1,20 @@
+{
+  "name": "dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yongjun-Han/DOM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yongjun-Han/DOM/issues"
+  },
+  "homepage": "https://github.com/Yongjun-Han/DOM#readme",
+  "type": "module"
+}
