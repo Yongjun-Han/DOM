@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* #root {
+      width: 100px;
+      height: 100px;
+      background-color: cadetblue;
+    } */
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    const root = document.getElementById("root");
+    
+    root.style.width = "300px";
+    root.style.height = "300px";
+    root.style.backgroundColor = "steelblue";
+    
+    console.dir(root.style);
+
+    const dom = [];
+    // const pokemon = ["피카츄","리자몽","망나뇽","갸라도스","꼬부기"]
+
+    // function test (tagName) {
+
+    //   for(let i=0; i<pokemon.length; i++) {
+    //     dom.push(`<${tagName} id="test-${(i+1)}">${pokemon[i]}</${tagName}>`);
+    //   }
+
+    // }
+    // test("section")
+
+
+
+
+    // function test2 (count, tagName , attri, attriValue, textnode) {
+      
+    //     for(let i=0; i<count; i++) {
+    //       dom.push(`<${tagName} ${attri}="${attriValue}-${i+1}">${textnode}</${tagName}>`)
+    //     }
+
+    // }
+    // test2(5,"nav","id","pokemon","리자몽")
+
+    function test3 (count, tagName ) {
+      
+      for(let i=0; i<count; i++) {
+        dom.push(`<${tagName} style="color:white">item-${i+1}</${tagName}>`)
+      }
+      dom.push("</ul>")
+      dom.unshift("<ul>")
+      }
+      test3(4,"li")
+      
+      root.innerHTML = dom.join('');
+      console.log(dom.join(''));
+
+  </script>
+</body>
+</html>
